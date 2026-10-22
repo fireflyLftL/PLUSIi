@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/clab3.dir/clab3.cpp.o CMakeFiles/clab3.dir/tests.cpp.o -o clab3  /usr/lib/libCatch2Main.a /usr/lib/libCatch2.a 

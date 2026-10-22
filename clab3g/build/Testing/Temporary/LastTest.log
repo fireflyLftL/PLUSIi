@@ -1,0 +1,67 @@
+Start testing: Oct 06 09:20 UTC
+----------------------------------------------------------
+1/2 Testing: Newton.n
+1/2 Test: Newton.n
+Command: "/workspaces/PLUSIi/clab3g/build/clab3g" "--gtest_filter=Newton.n" "--gtest_also_run_disabled_tests"
+Directory: /workspaces/PLUSIi/clab3g/build
+"Newton.n" start time: Oct 06 09:20 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspaces/PLUSIi/clab3g/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Newton.n
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Newton
+[ RUN      ] Newton.n
+[       OK ] Newton.n (0 ms)
+[----------] 1 test from Newton (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Newton.n" end time: Oct 06 09:20 UTC
+"Newton.n" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: Newton.nn
+2/2 Test: Newton.nn
+Command: "/workspaces/PLUSIi/clab3g/build/clab3g" "--gtest_filter=Newton.nn" "--gtest_also_run_disabled_tests"
+Directory: /workspaces/PLUSIi/clab3g/build
+"Newton.nn" start time: Oct 06 09:20 UTC
+Output:
+----------------------------------------------------------
+Running main() from /workspaces/PLUSIi/clab3g/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Newton.nn
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Newton
+[ RUN      ] Newton.nn
+/workspaces/PLUSIi/clab3g/testsg.cpp:7: Failure
+Expected equality of these values:
+  newton(1.0)
+    Which is: 1.41
+  108
+
+[  FAILED  ] Newton.nn (0 ms)
+[----------] 1 test from Newton (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] Newton.nn
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"Newton.nn" end time: Oct 06 09:20 UTC
+"Newton.nn" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 06 09:20 UTC

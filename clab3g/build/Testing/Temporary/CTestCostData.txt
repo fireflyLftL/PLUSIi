@@ -1,0 +1,4 @@
+Newton.n 1 0.00341846
+Newton.nn 0 0
+---
+Newton.nn

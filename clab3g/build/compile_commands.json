@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/workspaces/PLUSIi/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/clab3.dir/clab3.cpp.o -c /workspaces/PLUSIi/clab3/clab3.cpp",
+  "file": "/workspaces/PLUSIi/clab3/clab3.cpp",
+  "output": "CMakeFiles/clab3.dir/clab3.cpp.o"
+},
+{
+  "directory": "/workspaces/PLUSIi/build",
+  "command": "/usr/bin/g++   -g -o CMakeFiles/clab3.dir/tests.cpp.o -c /workspaces/PLUSIi/clab3/tests.cpp",
+  "file": "/workspaces/PLUSIi/clab3/tests.cpp",
+  "output": "CMakeFiles/clab3.dir/tests.cpp.o"
+}
+]

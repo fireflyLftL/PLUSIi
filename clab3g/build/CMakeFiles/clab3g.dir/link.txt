@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/clab3g.dir/clab3g.cpp.o CMakeFiles/clab3g.dir/testsg.cpp.o -o clab3g  lib/libgtest_main.a lib/libgtest.a 

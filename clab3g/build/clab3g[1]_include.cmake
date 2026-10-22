@@ -1,0 +1,5 @@
+if(EXISTS "/workspaces/PLUSIi/clab3g/build/clab3g[1]_tests.cmake")
+  include("/workspaces/PLUSIi/clab3g/build/clab3g[1]_tests.cmake")
+else()
+  add_test(clab3g_NOT_BUILT clab3g_NOT_BUILT)
+endif()
