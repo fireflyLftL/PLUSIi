@@ -1,6 +1,17 @@
 {
-  "name": "C++ CMake Ubuntu",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "name": "C++ CMake Beast",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-24.04",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "ms-vscode.cpptools-extension-pack"
+      ]
+    }
+  },
   
   "runArgs": [
     "--cap-add=SYS_PTRACE",
@@ -8,17 +19,7 @@
     "seccomp=unconfined"
   ],
   
-  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential cmake ninja-build gdb git clang-format clang-tidy",
-  
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "ms-vscode.cpptools",
-        "ms-vscode.cmake-tools",
-        "twxs.cmake"
-      ]
-    }
-  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential gdb git clang-format clang-tidy cmake ninja-build",
   
   "remoteUser": "vscode"
 }
