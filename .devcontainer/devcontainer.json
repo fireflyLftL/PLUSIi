@@ -1,1 +1,41 @@
-
+{
+  "name": "C++ CMake Beast",
+  // Берем официальный образ с линуксом и базовыми тулзами для C++
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-24.04",
+  
+  // Докидываем фичи (это типа плагинов для контейнера)
+  "features": {
+    "ghcr.io/devcontainers/features/cmake:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/ninja:1": {},
+    // Если хочешь внутри контейнера гонять докер (например, для тестов)
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  
+  // Настройки для VS Code (если юзаешь его)
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "twxs.cmake",
+        "ms-vscode.cpptools-extension-pack"
+      ]
+    }
+  },
+  
+  // КРИТИЧНО для дебагга (gdb/lldb). Без этого отладчик будет отваливаться
+  "runArgs": [
+    "--cap-add=SYS_PTRACE",
+    "--security-opt",
+    "seccomp=unconfined"
+  ],
+  
+  // Команда, которая выполнится один раз при создании среды. 
+  // Сюда можно вписать установку любых библиотек (Boost, OpenCV и т.д.)
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y build-essential gdb git clang-format clang-tidy",
+  
+  // Работаем от обычного пользователя, а не от root
+  "remoteUser": "vscode"
+}
